@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :imports, only: [:create]
   resources :lessons
   resources :chapters
   resources :categories

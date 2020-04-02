@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<%= form_with(model: Import.new) do |f| %>
+  <%= f.file_field :file %>
+  <%= f.hidden_field :importable_type, value: controller_name.singularize.capitalize %>
+  <%= f.submit %>
+<% end %>
 <h1>Categories</h1>
 
 <table>
