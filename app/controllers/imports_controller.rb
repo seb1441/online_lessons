@@ -1,9 +1,6 @@
 class ImportsController < ApplicationController
   def create
-    import = Import.new(import_params)
-
-    if import.save
-    end
+    Import.create(import_params)
   end
 
   private

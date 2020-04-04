@@ -6,11 +6,30 @@
     <%= csp_meta_tag %>
     <%= action_cable_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
   </head>
 
   <body>
+  <div class="flex justify-center bg-blue-200 h-16">
+      <a href="index.html" class="py-2 m-2 px-4">
+        HOME
+      </a>
+      <a href="about.html" class="py-2 m-2 px-4">
+        ABOUT
+      </a>
+      <a href="lessons.html" class="py-2 m-2 px-4">
+        LESSONS
+      </a>
+      <a href="reviews.html" class="py-2 m-2 px-4">
+        REVIEWS
+      </a>
+      <a href="contact.html" class="py-2 m-2 px-4">
+        CONTACT
+      </a>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>

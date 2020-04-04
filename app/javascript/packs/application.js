@@ -20,3 +20,6 @@ import "controllers"
 
 require("trix")
 require("@rails/actiontext")
+
+require("alpinejs")
+import "../stylesheets/application.scss"
