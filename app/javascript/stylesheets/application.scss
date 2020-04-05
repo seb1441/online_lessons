@@ -1,3 +1,14 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+a:hover {
+  color: #3399ff;
+}
+
+.home {
+  // background-image: image-url("../images/home1.jpg");
+  background-color: #d9faff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

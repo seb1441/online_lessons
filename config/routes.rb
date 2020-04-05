@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
-  resources :imports, only: [:create]
-  resources :lessons
-  resources :chapters
-  resources :categories
-  resources :levels
+  scope :back do
+    resources :imports, only: [:create]
+    resources :lessons
+    resources :chapters
+    resources :categories
+    resources :levels
+  end
   devise_for :users
 
-  get "/testa", to: "pages#index"
-  root "lessons#index"
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/about", to: "pages#about", as: :pages_about
+  get "/contact", to: "pages#contact", as: :pages_contact
+  get "/home", to: "pages#home", as: :pages_home
+  get "/lessons", to: "pages#lessons", as: :pages_lessons
+  get "/reviews", to: "pages#reviews", as: :pages_reviews
+  get "/trial", to: "pages#trial", as: :pages_trial
+
+  root "pages#home"
 end

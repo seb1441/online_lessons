@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OnlineLessons</title>
+    <title>Masuta</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= action_cable_meta_tag %>
@@ -13,25 +13,19 @@
   </head>
 
   <body>
-  <div class="flex justify-center bg-blue-200 h-16">
-      <a href="index.html" class="py-2 m-2 px-4">
-        HOME
-      </a>
-      <a href="about.html" class="py-2 m-2 px-4">
-        ABOUT
-      </a>
-      <a href="lessons.html" class="py-2 m-2 px-4">
-        LESSONS
-      </a>
-      <a href="reviews.html" class="py-2 m-2 px-4">
-        REVIEWS
-      </a>
-      <a href="contact.html" class="py-2 m-2 px-4">
-        CONTACT
-      </a>
-    </div>
+    <header class="flex justify-center bg-blue-200 h-16">
+      <%= link_to "HOME", pages_home_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "home"}" %>
+      <%= link_to "ABOUT", pages_about_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "about"}" %>
+      <%= link_to "LESSONS", pages_lessons_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "lessons"}" %>
+      <%= link_to "REVIEWS", pages_reviews_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "reviews"}" %>
+      <%= link_to "CONTACT", pages_contact_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "contact"}" %>
+    </header>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    <hr>
+    <footer class="flex justify-center py-6">
+      © 2020 Masuta
+    </footer>
   </body>
 </html>
