@@ -51,7 +51,7 @@ end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "devise", "~> 4.7", ">= 4.7.1"
-gem "stimulus_reflex", "~> 2.2"
+gem 'stimulus_reflex', '~> 3.0'
 gem "redis", "~> 4.1", ">= 4.1.3"
 gem "hiredis", "~> 0.6.3"
 gem "aws-sdk-s3", require: false
