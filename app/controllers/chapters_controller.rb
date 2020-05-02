@@ -1,6 +1,10 @@
 class ChaptersController < ApplicationController
   before_action :set_chapter, only: [:show, :edit, :update, :destroy]
 
+  before_action do
+    @side = "admin"
+  end
+
   # GET /chapters
   # GET /chapters.json
   def index

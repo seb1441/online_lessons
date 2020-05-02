@@ -1,5 +1,10 @@
 class CategoriesController < ApplicationController
+  # layout "admin"
   before_action :set_category, only: [:show, :edit, :update, :destroy]
+
+  before_action do
+    @side = "admin"
+  end
 
   # GET /categories
   # GET /categories.json

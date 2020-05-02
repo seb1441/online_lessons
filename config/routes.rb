@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :chapters
     resources :categories
     resources :levels
+
+    get "/", to: "categories#index"
   end
   devise_for :users
 

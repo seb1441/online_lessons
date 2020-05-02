@@ -112,4 +112,5 @@ Rails.application.configure do
 
   # TODO: add the below line with real host name
   # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.lograge.enabled = true
 end

@@ -1,6 +1,10 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
 
+  before_action do
+    @side = "admin"
+  end
+
   # GET /lessons
   # GET /lessons.json
   def index

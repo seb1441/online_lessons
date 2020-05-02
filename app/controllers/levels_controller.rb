@@ -1,6 +1,10 @@
 class LevelsController < ApplicationController
   before_action :set_level, only: [:show, :edit, :update, :destroy]
 
+  before_action do
+    @side = "admin"
+  end
+
   # GET /levels
   # GET /levels.json
   def index

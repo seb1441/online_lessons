@@ -1,0 +1,7 @@
+<header class="front-navbar flex justify-center bg-blue-200 h-16">
+  <%= link_to "HOME", pages_home_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "home"}" %>
+  <%= link_to "ABOUT", pages_about_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "about"}" %>
+  <%= link_to "LESSONS", pages_lessons_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "lessons"}" %>
+  <%= link_to "REVIEWS", pages_reviews_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "reviews"}" %>
+  <%= link_to "CONTACT", pages_contact_path, class: "py-2 m-2 px-4 #{'text-white' if controller.action_name == "contact"}" %>
+</header>

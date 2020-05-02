@@ -777,7 +777,7 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@rails/actioncable@^6.0.0":
+"@rails/actioncable@>= 6.0", "@rails/actioncable@^6.0.0":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.2.tgz#bcba9bcd6ee09a47c6628336e07399a68ca87814"
   integrity sha512-vN78gohsXPlC5jxBHlmiwkUI9bv6SulcZaE72kAIg/G4ou+wTdiMWPJK1bf2IxUNf+sfOjhl+tbRmY4AzJcgrw==
@@ -1117,11 +1117,6 @@ acorn@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.1.tgz#e35668de0b402f359de515c5482a1ab9f89a69bf"
   integrity sha512-add7dgA5ppRPxCFJoAGfMDi7PIBXq1RtGo7BhbLaxwrXPOmw8gq48Y9ozT01hUKy9byMjlR20EJhu5zlkErEkg==
-
-"actioncable@>= 5.2":
-  version "5.2.4"
-  resolved "https://registry.yarnpkg.com/actioncable/-/actioncable-5.2.4.tgz#744f555f16d87413044f81074a9cc4d2cf416502"
-  integrity sha512-2mCP0eKTjxtDWNPqP6xPar9a5i8F/pndrTHJGU6QDS1a77B+DlPEWzPRiyNAaNEGMY/9yTBOP3CXhR+8/zaVQw==
 
 aggregate-error@^3.0.0:
   version "3.0.1"
@@ -1641,10 +1636,10 @@ bytes@3.1.0, bytes@^3.0.0:
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
-"cable_ready@>= 4.0":
-  version "4.0.9"
-  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.9.tgz#9d8a1c3a5af4251e2ecc3ce18c71346d131cbbbc"
-  integrity sha512-WB2xLIu31PSwwRXRLl/9tHwGqFUFEYbtXvM1SBsIRR5t6UaMW/OJrstPanqCiX4ZfTU4IafGn+1rjV/Js2jNhw==
+"cable_ready@>= 4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.1.2.tgz#465eb1e5b851a5d1cec72726226c62c55261b616"
+  integrity sha512-F6hJBSsEjN2voJiUZoM05cplB49AIaXk3oHVZptPG2bbw+HLbiR3jU3SSslnm4VIKSfPzfvPHlyU16kuiro6JA==
   dependencies:
     morphdom "^2.5.12"
 
@@ -4575,9 +4570,9 @@ mixin-deep@^1.2.0:
     minimist "^1.2.5"
 
 morphdom@^2.5.12:
-  version "2.5.12"
-  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.12.tgz#92394bcb8884e94fde097f6ab3e76cf94cd3291f"
-  integrity sha512-KAAMs5yBv5of2HJv1vKfOdpdSXrptFEmS7RdWQDvz8jPQawNu7lVFERUvwePSPVdhigFp3XOsUc1anpPARbSOA==
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.6.0.tgz#6f7e63e5373e34821df9827fd7afe0c5cf74780a"
+  integrity sha512-h1A42I7IWTzcKoMY+Iz3btNN+46VkdFpZDcccORbhA0aQxUIU3Tni3QOEsot63KuJLRRdV4rQaYpTdtJwkI9dg==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -6866,15 +6861,16 @@ stdout-stream@^1.4.0:
     "@stimulus/core" "^1.1.1"
     "@stimulus/webpack-helpers" "^1.1.1"
 
-stimulus_reflex@^2.2.2:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.2.3.tgz#489c0188e7f7713c71aec789316747d707024d93"
-  integrity sha512-HXQk0MGWtmrM/oCKe9YOjhLMhGJOjyg4JY1cCDknkFKRRS7cQc28R2BJZkS20IzTjPiHtFCFZIBISFICSIRrDQ==
+stimulus_reflex@^3.1.4:
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-3.1.4.tgz#eca5ea6c8af13c2b61586fa2dc57e257898787c5"
+  integrity sha512-rDuJ8Trw2/dco4w6pPcewZOWoQBiIRs6Q/TRWwD6x6kLcL8BPA1vzlawpdcTX35Tbv46Ab9HF+Ael5yhAkLX6w==
   dependencies:
-    actioncable ">= 5.2"
-    cable_ready ">= 4.0"
+    "@rails/actioncable" ">= 6.0"
+    cable_ready ">= 4.1.2"
     inflected ">= 2.0"
     stimulus ">= 1.1"
+    uuid ">= 7.0.3"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
@@ -7437,6 +7433,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+"uuid@>= 7.0.3":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.0.0.tgz#bc6ccf91b5ff0ac07bbcdbf1c7c4e150db4dbb6c"
+  integrity sha512-jOXGuXZAWdsTH7eZLtyXMqUb9EcWMGZNbL9YcGBJl4MH4nrxHmZJhEHvyLFrkxo+28uLb/NYRcStH48fnD0Vzw==
 
 uuid@^3.0.1, uuid@^3.3.2:
   version "3.4.0"
